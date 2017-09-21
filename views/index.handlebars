@@ -26,8 +26,8 @@
      <li>
        {{this.burger_name}}
 
-       <form action="/{{this.id}}?_method=PUT"method="POST">
-       	<input type="hidden" name="devoured" value="false"><button type="submit">UPCHUCK</button>
+       <form action="/{{this.id}}?_method=DELETE"method="POST">
+       	<input type="hidden" name="devoured" value={{this.id}}><button type="submit">UPCHUCK</button>
        </form>
        </li>
        {{/if}}
